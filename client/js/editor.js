@@ -7,4 +7,4 @@ Template.editor.helpers({
 
     return undefined;
   }
-})
+});
