@@ -1,6 +1,13 @@
+Session.set("current_date", new Date());
+
+Meteor.setInterval(function(){
+  Session.set("current_date", new Date());
+}, 1000);
+
+
 Template.date_display.helpers({
   current_date: function() {
-    return new Date();
+    return Session.get("current_date");
   }
 });
 
