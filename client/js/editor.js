@@ -6,5 +6,12 @@ Template.editor.helpers({
     }
 
     return undefined;
+  },
+  config: function() {
+    return function(editor) {
+      editor.on("change", function(cm_editor, info) {
+        $("#viewer_iframe").contents().find("html").html(cm_editor.getValue());
+      });
+    };
   }
 });
