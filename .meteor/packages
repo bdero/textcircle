@@ -22,5 +22,5 @@ mquandalle:jade
 fourseven:scss
 mizzao:sharejs-codemirror
 twbs:bootstrap
-accounts-ui
 accounts-password
+ian:accounts-ui-bootstrap-3
